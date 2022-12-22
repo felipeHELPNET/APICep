@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaCEPs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<style>
+
+    .base{
+        width: 100vw;
+        height: 100vh;
+        background: #dcdcde;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center
+
+    }
+  
+    .container{
+        width: 300px;
+        height: 800px;
+        background: #a7aaad;
+        border-radius: 20px;
+    }
+
+    h1{
+        margin-top: 10px;
+    }
+    label{
+        font-weight: 500;
+    }
+
+    small{
+        font-size: 11px;
+        color: rgba(4, 4, 9, 0.509);
+        font-style: italic;
+    }
+
+    
+    </style>
+<body>
+
+    <div class="base">
+
+        <div class="container">
+            
+            <form>
+                    
+                <h1>Consulte o CEP</h1><br>
+                
+                <div class="form-group"><label for="cep">CEP</label><input type="text" class="form-control" maxlength="9" id="cep"><small>00000-000</small></div><br>
+                
+                <div class="form-group"><label for="ddd">DDD</label><input type="text" class="form-control" id="ddd"><small>(00)</small></div><br>
+                
+                <div class="form-group"><label for="logradouro">Logradouro</label><input type="text" class="form-control" id="logradouro"><small>Av./Rua/Travessa</small></div><br>
+                
+                <div class="form-group"><label for="bairro">Bairro</label><input type="text" class="form-control" id="bairro"><small>Bairro</small></div><br>
+                
+                <div class="form-group"><label for="localidade">Localidade</label><input type="text" class="form-control" id="localidade"><small>Cidade/Município/Distrito</small></div><br>
+                
+                <div class="form-group"><label for="uf">UF</label><input type="text" class="form-control" id="uf"><small>Estado</small></div><br>
+                
+            </form>
+        
+        </div>
+    
+    </div>
+
+    <script src="src/js/main.js"></script>
+    
+</body>
+</html>
